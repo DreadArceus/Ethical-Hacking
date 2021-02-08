@@ -1,0 +1,49 @@
+List of terminal commands that are useful
+
+passwd: change password of the system
+sudo -i: activate root
+pwd: print working directory
+cd: change directory (tab for suggest) [cd .. for parent]
+ls: list children
+	-a: shows hidden(begins with .) children also
+	-l: long view (detailed report)
+		first column shows permissions (Read/Write/eXecute)
+mkdir/rmdir: create or delete a directory/folder
+command > y: creates file y and writes output of command in it
+	echo "x" > y: creates file y and writes x in it
+	use >> for appending output to the file
+cp path_y path_z: copies file at path_y to path_z
+mv path_y path_z: cp except move
+rm path_x: deletes file at path_x
+locate name: finds all files with given name
+updatedb: explicitly make linux update the filedb
+man x: opens manual for given query
+adduser name: command to create new user
+cat: concatenates files and prints the output
+	/etc/passwd: stores all user info
+	/etc/shadow: password hashes
+su: switch user [su - for root]
+grep: print lines that match patterns
+ifconfig: gives network interface details
+	iwconfig: wireless version
+ping: send ECHO_REQUEST to network hosts, infinitely
+	flag -c followed by number for finite pings
+arp: display kernel's IPv4 network neighbour cache
+netstat: prints all network connections/ports
+route: shows IP routing table
+touch/nano: creates file
+apt update &  apt upgrade: system update
+apt install: install a package
+apt purge: remove a package
+service: runs a service
+	apache2 start: start apache2 server
+	apache2 stop: stops apache2 server
+	postgresql, ssh: similarly
+systemctl: to add startup/boot commands [systemd management]
+	enable: starts service automatically on boot
+cut: cuts text at given delimiter and returns element at fth position
+	flag -d for delimiter and -f for position to return
+tr: deletes specified characters
+	flag -d for delimiter
+chmod: add/remove permissions to files
+nmap, comes in later
