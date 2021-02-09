@@ -1,0 +1,5 @@
+python3.9 -m http.server [PORT]:
+	creates http server at given port,
+	hosting the pwd
+python3 -m pyftpdlib -p [PORT] -w:
+	creates ftp server at given port
